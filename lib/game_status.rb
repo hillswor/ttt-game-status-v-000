@@ -57,8 +57,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?board
+  won?(board)
   return position_1 && position_2 && position_3
 end
-
-
