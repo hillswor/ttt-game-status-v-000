@@ -36,7 +36,6 @@ else
   return false
 end
 
-
 def full?(board)
   if board.any?{|moves| moves == " "}
     return false
@@ -56,3 +55,10 @@ end
 def over?(board)
   won?(board) || full?(board)
 end
+
+def winner(board)
+  won?board
+  return position_1 && position_2 && position_3
+end
+
+
