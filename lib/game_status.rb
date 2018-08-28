@@ -33,3 +33,11 @@ def won?(board)
 else
   false
 end
+
+
+def full?(board)
+  if board.any?{|moves| moves == " "}
+    return false
+  else
+    return true
+  end
